@@ -4,6 +4,7 @@ import "./NavBar.scss";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ForumIcon from '@mui/icons-material/Forum';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { Link } from 'react-router-dom';
 
 interface INavBarProps {
 }
@@ -15,19 +16,20 @@ export const NavBar: React.FC<INavBarProps> = (props) => {
                 <Input></Input>
             </div>
             <div className='Films-Button'>
-                <Button>Films</Button>
-                <Button>Anime</Button>
-                <Button>Top100</Button>
+                <Link to="/">Home</Link>
+                <Link to="films">Films</Link>
+                <Link to="anime">Anime</Link>
+                <Link to="top100">TOP100</Link>
             </div>
-            <div className=''>
+            <div className='Icon-button'>
                 <IconButton>
-                    <NotificationsIcon />
+                    <Link to='/profile'><NotificationsIcon /></Link>
                 </IconButton>
                 <IconButton>
-                    <ForumIcon />
+                    <Link to='/profile'><ForumIcon /></Link>
                 </IconButton>
                 <IconButton size="large">
-                    <AccountCircleIcon />
+                    <Link to='/profile'><AccountCircleIcon /></Link>
                 </IconButton>
 
             </div>

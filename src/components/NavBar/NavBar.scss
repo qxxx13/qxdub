@@ -2,10 +2,43 @@
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
+    align-items: center;
 }
 
 .Films-Button {
     display: flex;
-    width: 500px;
+    //width: 500px;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        //color: #03e9f4;
+        position: relative;
+        display: inline-block;
+        padding: 25px 50px;
+        color: #02ffc0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        overflow: hidden;
+        margin-right: 50px;
+
+    }
+
+    a:hover {
+        background: #02ffc0;
+        color: #050801;
+        box-shadow: 0 0 5px #02ffc0,
+            0 0 25px #02ffc0,
+            0 0 50px #02ffc0,
+            0 0 200px #02ffc0;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+}
+
+.Icon-button {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
 }
