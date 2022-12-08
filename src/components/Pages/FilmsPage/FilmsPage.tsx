@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Films } from './Films/Films';
 import "./FilsPage.scss";
 
 interface IFilmsPageProps {
@@ -6,10 +7,8 @@ interface IFilmsPageProps {
 
 export const FilmsPage: React.FC<IFilmsPageProps> = (props) => {
     return (
-        <div className='FilmsPage-container'>
-            <div className='sidepanel'>
-                <input type="text" />
-            </div>
-        </div >
+        <div className='Films-container'>
+            <Films />
+        </div>
     );
 };

@@ -12,7 +12,7 @@ interface INavBarProps {
 export const NavBar: React.FC<INavBarProps> = (props) => {
     return (
         <div className='NavBar-container'>
-            <div className=''>
+            <div className='Input'>
                 <Input></Input>
             </div>
             <div className='Films-Button'>
